@@ -1,0 +1,31 @@
+sistema_user:
+    resource: "@SistemaUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+sistema_formularios:
+    resource: "@SistemaFormulariosBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+o_farrel_guias:
+    resource: "@OFarrelGuiasBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+ipap_calculator:
+    resource: "@IPAPCalculatorBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+login_check:
+    pattern: /login_check
+    
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin

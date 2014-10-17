@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /web/bundles/
 /app/bootstrap.php.cache
 /app/cache/*
@@ -10,3 +11,23 @@
 /bin/
 /composer.phar
 /nbproject/private/
+=======
+# Bootstrap
+app/bootstrap*
+
+# Symfony directories
+vendor/*
+*/logs/*
+*/cache/*
+web/uploads/*
+web/bundles/*
+
+# Configuration files
+app/config/parameters.ini
+app/config/parameters.yml
+
+# Composer
+composer.phar
+
+gonzaloalonso/vendor/*
+>>>>>>> origin/master
