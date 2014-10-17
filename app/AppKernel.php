@@ -21,17 +21,11 @@ class AppKernel extends Kernel
             new Sistema\FormulariosBundle\SistemaFormulariosBundle(),
             new Sistema\UserBundle\SistemaUserBundle(),
             // Add your dependencies
-            new Sonata\CoreBundle\SonataCoreBundle(),
-            new Sonata\BlockBundle\SonataBlockBundle(),
+            new MWSimple\Bundle\AdminCrudBundle\MWSimpleAdminCrudBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-            //...
-            // If you haven't already, add the storage bundle
-            // This example uses SonataDoctrineORMAdmin but
-            // it works the same with the alternatives
-            new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
-            // Then add SonataAdminBundle
-            new Sonata\AdminBundle\SonataAdminBundle(),
-            new Test\TestBundle\TestBundle(),
+            new Lexik\Bundle\FormFilterBundle\LexikFormFilterBundle(),
+            new FOS\UserBundle\FOSUserBundle()
     );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
