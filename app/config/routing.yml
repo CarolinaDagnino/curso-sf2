@@ -1,0 +1,25 @@
+sistema_formularios:
+    resource: "@SistemaFormulariosBundle/Controller/"
+    type:     annotation
+    prefix:   /
+    
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+o_farrel_guias:
+    resource: "@OFarrelGuiasBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+ipap_calculator:
+    resource: "@IPAPCalculatorBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+login_check:
+    pattern: /login_check
+
+mw_simple_admin_crud:
+    resource: "@MWSimpleAdminCrudBundle/Controller/"
+    type:     annotation
+    prefix:   /admin
